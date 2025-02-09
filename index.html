@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixture del Carnaval Uruguayo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="score-input">
+        <h2>Puntuar Murgas</h2>
+        <form id="score-form">
+            <label for="murga-select">Seleccionar Murga:</label>
+            <select id="murga-select">
+                <!-- Las opciones de murgas se insertarán aquí -->
+            </select>
+            <div>
+                <label for="stage-select">Seleccionar Etapa:</label>
+                <select id="stage-select">
+                    <option value="firstRound">Primera Ronda</option>
+                    <option value="secondRound">Segunda Ronda</option>
+                    <option value="liguilla">Liguilla</option>
+                </select>
+            </div>
+            <div>
+                <label for="vocalArrangements">Arreglos Corales:</label>
+                <input type="number" id="vocalArrangements" min="0" max="10" step="0.1">
+            </div>
+            <div>
+                <label for="musicality">Musicalidad:</label>
+                <input type="number" id="musicality" min="0" max="10" step="0.1">
+            </div>
+            <div>
+                <label for="theme">Temática:</label>
+                <input type="number" id="theme" min="0" max="10" step="0.1">
+            </div>
+            <div>
+                <label for="couples">Cuples:</label>
+                <input type="number" id="couples" min="0" max="10" step="0.1">
+            </div>
+            <div>
+                <label for="staging">Puesta en Escena:</label>
+                <input type="number" id="staging" min="0" max="10" step="0.1">
+            </div>
+            <div>
+                <label for="costumesSetDesign">Ropa/Escenografía:</label>
+                <input type="number" id="costumesSetDesign" min="0" max="10" step="0.1">
+            </div>
+            <div>
+                <label for="salpicon">Salpicón:</label>
+                <input type="number" id="salpicon" min="0" max="10" step="0.1">
+            </div>
+            <div>
+                <label for="finalSongRetirement">Canción Final/Retirada:</label>
+                <input type="number" id="finalSongRetirement" min="0" max="10" step="0.1">
+            </div>
+            <button type="submit">Guardar Puntaje</button>
+        </form>
+    </div>
+
+    <div class="results-display">
+        <h2>Primera Ronda</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Murga</th>
+                    <th>Puntaje Total</th>
+                </tr>
+            </thead>
+            <tbody id="first-round-body">
+                <!-- Los resultados de la primera ronda se insertarán aquí -->
+            </tbody>
+        </table>
+    </div>
+
+    <div class="results-display">
+        <h2>Segunda Ronda</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Murga</th>
+                    <th>Puntaje Total</th>
+                </tr>
+            </thead>
+            <tbody id="second-round-body">
+                <!-- Los resultados de la segunda ronda se insertarán aquí -->
+            </tbody>
+        </table>
+    </div>
+
+    <div class="results-display">
+        <h2>Liguilla</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Murga</th>
+                    <th>Puntaje Total</th>
+                </tr>
+            </thead>
+            <tbody id="liguilla-body">
+                <!-- Los resultados de la liguilla se insertarán aquí -->
+            </tbody>
+        </table>
+    </div>
+
+    <div class="results-display">
+        <h2>Podio</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Puesto</th>
+                    <th>Murga</th>
+                    <th>Puntaje Total</th>
+                </tr>
+            </thead>
+            <tbody id="podium-body">
+                <!-- Los resultados del podio se insertarán aquí -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+body {
+    background-color: #6a0dad; /* Fondo violeta */
+    color: #eed4d4; /* Texto blanco */
+    font-family: cursive, sans-serif; /* Fuente */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+}
+
+h2 {
+    color: #ffccff; /* Color de los títulos */
+}
+
+.results-display, .score-input {
+    background-color: #8a2be2; /* Fondo de los cuadros */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 20px;
+    margin: 20px;
+    width: 80%; /* Ancho del cuadro */  
+    max-width: 800px;
+    font-family: cursive, sans-serif; /* Fuente */
+    font-size: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 20px;    
+    background-color:#9932cc ;
+    padding: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-radius: 20px;
+}
+
+th {
+    background-color: #9932cc; /* Fondo de los encabezados */
+}
+
+button {
+    background-color: #ff69b4; /* Fondo de los botones */
+    color: #ffffff;
+    border: none;
+    border-radius: 20px; /* Botones redondos */
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff1493; /* Color al pasar el mouse */
+}
+
+input[type="number"], select {
+    -moz-appearance: textfield; /* Eliminar botones de número en Firefox */
+    appearance: textfield; /* Eliminar botones de número en otros navegadores */
+    border: 1px solid #c39595;
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 5px;
+    width: calc(100% - 12px); /* Ajuste del ancho */
+    margin-bottom: 10px;
+    background-color: #dda0dd; /* Fondo suave para los cuadros de selección y puntuación */
+    color: #563c22; /* Texto negro */
+    font-family: cursive, sans-serif; /* Fuente */
+    font-size: 20px;
+}
+
+input[type="number"]:focus, select:focus {
+    border-color: #ba55d3; /* Color violeta para los bordes cuando están en uso */
+    outline: none; /* Eliminar el contorno */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
+    .results-display, .score-input {
+        width: 90%;
+        padding: 15px;
+    }
+
+    table {
+        padding: 10px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    input[type="number"], select {
+        padding: 4px;
+        width: calc(100% - 10px);
+    }
+}
+
+/* Media queries para dispositivos muy pequeños */
+@media (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+
+    .results-display, .score-input {
+        width: 95%;
+        padding: 10px;
+    }
+
+    table {
+        padding: 5px;
+    }
+
+    th, td {
+        padding: 5px;
+    }
+
+    button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    input[type="number"], select {
+        padding: 3px;
+        width: calc(100% - 8px);
+    }
+}
